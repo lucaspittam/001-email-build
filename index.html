@@ -1,0 +1,60 @@
+<div class="container contact-form">
+    <h1 class="heading">Contact Me</h1>
+    <!--   add your form end point in the form action  -->
+    <form action="/p/d6362a742486ee26ab0cb428826b8f1f" method="POST" target="_blank">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white">
+              <i class="fa fa-user"></i>&nbsp;
+            </span>
+          </div>
+          <input name="name" type="name" placeholder="Name" class="form-control border-left-0" required>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white">
+              <i class="fa fa-envelope"></i>
+            </span>
+          </div>
+          <input name="email" type="email" placeholder="Email" class="form-control border-left-0" required>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <textarea class="form-control" id="message" rows="5" placeholder="Wazzup?" required></textarea>
+      </div>
+  
+      <!--     ADD SPAM FILTER HERE  -->
+  
+      <!--     <div style="position: absolute; left: -5000px;">
+    <input type="checkbox" name="weird_name_associated_with_your_endpoint" value="1" tabindex="-1" autocomplete="no">
+  </div> -->
+  
+      <!--     END OF SPAM FILTER  -->
+  
+    </form>
+  </div>
+
+
+
+  <div id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/d6362a742486ee26ab0cb428826b8f1f?embedded=1"></div>
+
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script type="text/javascript" src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"></script>
+
+<!-- Get notified when the form is submitted, add your own code below: -->
+<script>
+const formkeepEmbed = document.querySelector('#formkeep-embed')
+
+formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+  console.log('Submitting form...')
+})
+
+formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+  console.log('Submitted form...')
+})
+</script>
